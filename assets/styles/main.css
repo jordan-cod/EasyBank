@@ -52,6 +52,20 @@ ul{
 }
 .header .nav .logo{
     width: 170px;
+    margin-left: 2%;
+}
+.fundo_menu{
+    display: none;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.7063200280112045) 0%, rgba(255,255,255,0.7483368347338936) 100%);
+}
+.fundo_menu.menu-ativo{
+    display: block;
+    z-index: -1;
 }
 /*button hamburguer*/
 .header .menu-bars{
@@ -62,6 +76,7 @@ ul{
     height: 50px;
     cursor: pointer;
     transition: all .5s ease-in-out;
+    margin-right: 2%;
 }
 .header .menu-bars .menu__bar{
     width: 50px;
@@ -153,12 +168,30 @@ ul{
 /*Media query*/
 @media (max-width: 1530px) {
     .header .nav{
-        margin: 0 2%;
+        margin: 0 auto;
     }
 }
 @media (max-width: 1120px) {
     .header .nav .menu-nav{
-        display: none;
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        height: 300px;
+        width: 90%;
+        margin: 0 5%;
+        top: -300px;
+        background: var(--white);
+        border-radius: 10px;
+        transition: all .3s linear;
+        z-index: 99;
+    }
+    .header .nav .menu-nav.isOpen{
+        top: 90px;
+    }
+    .header .nav .menu-nav li{
+        margin: 0;
+        width: 100%;
+        justify-content: center;
     }
     .request-invite{
         display: none;
