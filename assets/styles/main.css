@@ -320,7 +320,7 @@ ul{
         background-image: url(../../img/images/bg-intro-mobile.svg);
         background-repeat: no-repeat;
         background-position-y: 110px;
-        background-position-x: 10px;
+        background-position-x: 0px;
         background-size: 100%;
     }
 }
