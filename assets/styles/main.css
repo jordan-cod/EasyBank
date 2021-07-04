@@ -67,7 +67,7 @@ ul{
     width: 100%;
     height: 100vh;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.4318102240896359) 0%, rgba(255,255,255,0.7483368347338936) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.4318102240896359) 0%, rgba(0, 0, 0, 0) 100%);
 }
 /*button hamburguer*/
 .header .menu-bars{
