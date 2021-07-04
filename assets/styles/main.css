@@ -35,7 +35,9 @@ a{
 ul{
     list-style: none;
 }
-
+button{
+    -webkit-tap-highlight-color: transparent;
+}
 /*start*/
 /*******************Header********************/
 .header{
