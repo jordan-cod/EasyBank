@@ -321,6 +321,52 @@ button{
     color: var(--grayish-blue);
     font-size: .9rem;
 }
+/*footer*/
+.footer{
+    width: 100%;
+    background: var(--dark-blue);
+    height: 210px;
+}
+.container-footer{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 50%;
+}
+.icons{
+    display: flex;
+    margin-top: 50px;
+    color: var(--very-light-gray);
+}
+.icons li{
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+.footer-nav li:nth-last-child(1),.footer-nav li:nth-last-child(2),
+.footer-nav-2 li:nth-last-child(1),.footer-nav-2 li:nth-last-child(2){
+    margin-top: 20px;
+}
+.footer-nav li a, .footer-nav-2 li a{
+    color: var(--very-light-gray);
+}
+.rights{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.rights p{
+    margin-top: 20px;
+    color: var(--very-light-gray);
+}
 /*Media query*/
 @media (max-width: 1280px) {
     .main{
@@ -409,6 +455,14 @@ button{
         width: 100%;
         margin-right: 0px;
     }
+    .container-footer{
+        width: 100%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .rights .request-invite{
+        display: block;
+    }
 }
 @media (max-width: 1120px) {
     .header .nav .menu-nav{
@@ -455,6 +509,38 @@ button{
         background-position-y: 110px;
         background-position-x: 0px;
         background-size: 100%;
+    }
+    .footer{
+        height: auto;
+    }
+    .container-footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .menu{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .social div, .icons{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .social div, .icons :nth-last-child(1){
+        margin-right: 0;
+    }
+    .footer-nav, li, .footer-nav-2, li{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .rights{
+        align-items: center;
+    }
+    .rights .request-invite{
+        margin-top: 35px;
+    }
+    .rights p {
+        margin-bottom: 25px;
     }
 }
 @media (max-width: 700px){
